@@ -1,0 +1,52 @@
+.certificates-section .certificates-section-intro{
+    color: var(--light-grey);
+    margin-top: 0;
+}
+
+.certificates-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-100);
+    justify-content: center;
+    margin-top: var(--margin-6rem);
+    margin-bottom: var(--margin-6rem);
+}
+
+.card-container{
+    padding: var(--large-padding);
+    background-color: var(--light-bg-color);
+    box-shadow: 0px 0px 10px white;
+    width: 350px;
+}
+
+.card img{
+    max-height: 300px;
+    width: 100%;
+    height: auto;
+}
+
+.card .image-heading{
+    font-size: var(--medium-font-size);
+    text-align: center;
+}
+
+.card .content-section{
+    padding: var(--medium-padding);
+}
+.card .content {
+    font-size: var(--font-size-103rem);
+    text-align: center;
+    color: var(--light-grey);
+/* : var(--small-padding); */
+}
+
+.card .links {
+    margin-top: var(--margin-105rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--medium-gap);
+}
+.card .links a{
+    font-size: var(--small-font-size);
+}

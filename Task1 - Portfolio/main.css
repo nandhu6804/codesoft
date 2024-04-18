@@ -1,0 +1,67 @@
+ 
+
+*, h1, p{
+    color: white;
+}
+
+.main-content img{ 
+    width: 32px;
+    height: 32px;
+}
+
+
+
+.main{
+    height: calc(100vh - 60px);
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--medium-gap);
+    padding: var(--large-padding);
+}
+
+.main .main-content h1{
+    position: relative;
+    font-size: 3rem;
+}
+.main .main-content h1 span::after{
+    content: url('/img/handshake.png');
+    position: absolute;
+}
+.main .main-content p{
+    font-size: 1.5rem;
+    opacity: 0.5;
+    line-height: 1.4;
+}
+.main .main-content .main-content-sm {
+    display: flex;
+    gap: var(--small-gap);
+}
+.main .main-content .main-content-buttons{
+    margin-top: var(--main-content-margin);
+    display: flex;
+    gap: var(--small-gap);
+    align-items: center;
+    
+
+}
+.main .main-content .main-content-buttons button{
+    border-radius: var(--border-radius-5);
+    padding: var(--padding-10);
+    font-size: var(--medium-font-size);
+    color: black;
+    cursor: pointer;
+    border: none;
+}
+.main .main-content .main-content-buttons button:hover{
+    background-color: hsl(240, 100%, 50%);
+    color: white;
+}
+ 
+.main-image img{
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+}

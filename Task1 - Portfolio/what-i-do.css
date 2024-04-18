@@ -1,0 +1,99 @@
+
+
+.what-i-do-h1{
+    width: fit-content;     
+   margin: 0 auto;
+   margin-bottom: 4rem;
+   position: relative;
+}
+.what-i-do-h1::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    background-color: orange;
+    animation: underline_content linear forwards;
+    animation-timeline: view();
+    animation-range: 10px 360px;
+}
+
+
+
+.what-i-do {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: var(--large-gap);
+    padding: var(--large-padding);
+}
+
+.what-i-do-image img{
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+    scale: .8;
+    opacity: 0;
+
+    translate: -100px;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 150px 250px;
+ 
+}
+
+.what-i-do .what-i-do-content {
+    /* margin-top: var(--medium-margin-top);
+    margin-bottom: var(--medium-margin-bottom); */
+   scale: .8;
+   opacity: 0;
+   translate: 100px;
+   animation: fade-in linear forwards;
+   animation-timeline: view();
+   animation-range: 0px 350px;
+}
+.what-i-do .what-i-do-content p{
+    font-size: var(--medium-font-size);
+    line-height: 1.5;
+    
+}
+@keyframes underline_content {
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes fade-in {
+    to{
+        scale: 1;
+        opacity: 1;
+        translate: 0;
+    }
+}
+
+.what-i-do-logo{
+    display: flex;
+    gap: var(--medium-gap);
+}
+.what-i-do-logo img{ 
+    width: 32px;
+    height: 32px;
+    margin-bottom: var(--medium-margin-bottom);
+}
+.what-i-do-content ul{
+    list-style-type: none;
+    padding: 0;
+}
+.what-i-do-content ul li{
+    position: relative;
+     margin-top: var(--medium-margin-top);
+    margin-bottom: var(--medium-margin-top);
+}
+.what-i-do-content ul li::before{
+    position: absolute;
+    content: url("/img/lightning.png");
+    left: -20px;
+    bottom: -4px;
+}

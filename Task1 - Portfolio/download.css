@@ -1,0 +1,48 @@
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+
+}
+
+#resume-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-top: calc(var(--margin-6rem)); */
+    margin-bottom: var(--margin-6rem);
+    width: 100vw;
+    height: fit-content;
+    align-items: center;
+    padding: var(--extra-large-padding);
+    gap: var(--medium-gap); 
+}
+
+#resume-section .resume-download-heading {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#download-button{
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: hsl(240, 100%, 70%);
+    padding: var(--large-padding);
+}
+
+#download-button:hover{
+    background-color: hsl(240, 100%, 60%);
+}
+
+
+#resume-section div img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    cursor: pointer;
+}
+

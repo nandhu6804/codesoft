@@ -1,0 +1,143 @@
+/* :root{
+    --background-color: hsl(0, 0%, 100%);
+    --small-font-size: 1rem;
+    --medium-font-size: 1.5rem;
+    --big-font-size: 2rem;
+    --font-color: hsl(0, 0%, 0%);
+    --font-color-hover: hsl(0, 0%, 70%);
+    ---small-padding: 5px;
+    --large-padding: 20px;
+    --extra-large-padding: 60px;
+    --font-family: "Roboto", sans-serif;
+    --font-weight-thin: 100;
+    --font-weight-normal: 400;
+    --font-weight-bold: 900;
+    --small-gap: 15px;
+    --medium-gap: 30px;
+    --header-height: 60px;
+    --large-gap: 100px;
+    --medium-margin-top: 15px;
+    --medium-margin-bottom: 15px;
+    --margin-6rem: 6rem;
+    --margin-left-right: 3rem;
+} */
+
+h1{
+    margin: 0;
+    font-size: 3rem;
+}
+
+.skills-section{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: var(--margin-6rem);
+    padding: var(--extra-large-padding) ;
+    gap: var(--large-gap);
+    translate: 0 200px;
+    opacity: 0;
+    animation: fade 1s linear forwards;
+    animation-timeline: view();
+    animation-range: 10px 500px; 
+}
+
+@keyframes fade {
+    to{
+        translate: 0 0;
+        opacity: 1;
+        scale: 1;
+    }
+} 
+
+.skills-section .skills-content{
+    flex-grow: 1;
+    margin-right: auto;
+    align-self: center;
+}
+
+.skills-section .skills-content h1{
+    font-size: var(--big-font-size);
+}
+
+.skills-section .skills-content .skills-progress-content p{
+    font-size: var(--medium-font-size);
+}
+
+.skills-section .skills-content .skills-progress-content .progress-bar1{
+   width: 100%;
+   height: 1.5rem;
+   border-radius: 1rem;
+   background-color: white;
+   position: relative;
+}
+
+.skills-section .skills-content .skills-progress-content .progress-bar1::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    background-color: hsl(240, 100%, 70%);
+    border-radius: 1rem;
+
+}
+
+
+.skills-section .skills-content .skills-progress-content .progress-bar2{
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 1rem;
+    background-color: white;
+    position: relative;
+ }
+ 
+ .skills-section .skills-content .skills-progress-content .progress-bar2::before{
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 80%;
+     background-color: hsl(240, 100%, 70%);
+     border-radius: 1rem;
+ 
+ }
+
+ .skills-section .skills-content .skills-progress-content .progress-bar3{
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 1rem;
+    background-color: white;
+    position: relative;
+ }
+ 
+ .skills-section .skills-content .skills-progress-content .progress-bar3::before{
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 40%;
+     background-color: hsl(240, 100%, 70%);
+     border-radius: 1rem;
+ 
+ }
+
+ 
+ .skills-section .skills-content .skills-progress-content .progress-bar4{
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 1rem;
+    background-color: white;
+    position: relative;
+ }
+ 
+ .skills-section .skills-content .skills-progress-content .progress-bar4::before{
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 40%;
+     background-color: hsl(240, 100%, 70%);
+     border-radius: 1rem;
+ 
+ }
+
+ .skills-image{
+    align-self: center;
+ }
